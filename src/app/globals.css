@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-luxury-dark: #0d0a06;
+  --color-luxury-card: #15110a;
+  --color-parchment: #f4ebd0;
+  --color-parchment-dark: #e6d3a8;
+  --color-orthodox-gold: #d4af37;
+  --color-orthodox-gold-dark: #a98322;
+  --font-serif: var(--font-cinzel), Georgia, serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+/* Base custom styles */
+body {
+  background-color: #0d0a06;
+  color: #f4ebd0;
+}
+
+/* Custom scrollbar for museum theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0a06;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #251e11;
+  border-radius: 4px;
+  border: 2px solid #0d0a06;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Decorative Ornaments & Artifact Textures */
+.parchment-card {
+  background-color: #f4ebd0;
+  color: #1c150a;
+  border: 1px solid #e6d3a8;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 0 40px rgba(212, 175, 55, 0.05);
+}
+
+.parchment-card-dark {
+  background-color: #15110a;
+  color: #f4ebd0;
+  border: 1px solid #251e11;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Subtle glow simulating candlelight */
+.candle-glow {
+  box-shadow: 0 0 40px 10px rgba(212, 175, 55, 0.15);
+}
+
+/* Gold thin border decoration resembling manuscript frames */
+.manuscript-frame {
+  position: relative;
+}
+
+.manuscript-frame::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  pointer-events: none;
+}
+
