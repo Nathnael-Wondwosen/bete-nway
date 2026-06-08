@@ -51,8 +51,24 @@ export async function POST(request: Request) {
     });
   } catch (error: any) {
     console.error('Login error:', error);
+
+    // Surface database connection issues to the user
+    const isDbError =
+      error?.name === 'MongoNetworkError' ||
+      error?.name === 'MongooseServerSelectionError' ||
+      error?.message?.includes('ECONNREFUSED') ||
+      error?.message?.includes('querySrv') ||
+      error?.message?.includes('connect');
+
+    if (isDbError) {
+      return NextResponse.json(
+        { error: 'Database connection failed. Please check that your MongoDB Atlas cluster is running and the connection string is correct.' },
+        { status: 503 }
+      );
+    }
+
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { error: 'An unexpected error occurred. Please try again.' },
       { status: 500 }
     );
   }
