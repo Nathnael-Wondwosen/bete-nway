@@ -9,7 +9,7 @@ import CrossOrnament from "@/components/CrossOrnament";
 
 /* ── Sample data (replaced by API once DB is seeded) ── */
 const FEATURED_ARTWORKS = [
-  { id: "1", title: "Virgin Mary & Child", slug: "virgin-mary-child", price: 450, material: "Acrylic on Canvas", rating: 4.8, reviews: 32, image: "https://images.unsplash.com/photo-1577083165299-6f4ea30e4b72?w=600&q=80" },
+  { id: "1", title: "Virgin Mary & Child", slug: "virgin-mary-child", price: 450, material: "Acrylic on Canvas", rating: 4.8, reviews: 32, image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80" },
   { id: "2", title: "Ethiopian Processional Cross", slug: "ethiopian-processional-cross", price: 320, material: "Brass", rating: 4.6, reviews: 18, image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=80" },
   { id: "3", title: "Saint George Icon", slug: "saint-george-icon", price: 560, material: "Acrylic on Wood", rating: 4.9, reviews: 41, image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80" },
   { id: "4", title: "Ancient Manuscript", slug: "ancient-manuscript", price: 780, material: "Gouache on Parchment", rating: 4.7, reviews: 27, image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&q=80" },
@@ -41,7 +41,7 @@ export default function HomePage() {
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1577083165299-6f4ea30e4b72?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1920&q=80"
             alt="Ethiopian Orthodox Art Background"
             fill
             className="object-cover"

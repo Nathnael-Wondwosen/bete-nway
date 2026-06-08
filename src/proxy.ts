@@ -6,7 +6,7 @@ const JWT_SECRET = new TextEncoder().encode(
   process.env.JWT_SECRET || "dev-secret-key-change-in-production"
 );
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const token = request.cookies.get("admin_token")?.value;
 
@@ -20,7 +20,7 @@ export async function middleware(request: NextRequest) {
       await jwtVerify(token, JWT_SECRET);
       return NextResponse.next();
     } catch (error) {
-      console.error("Middleware auth verification failed:", error);
+      console.error("Proxy auth verification failed:", error);
       const response = NextResponse.redirect(new URL("/admin/login", request.url));
       response.cookies.delete("admin_token");
       return response;

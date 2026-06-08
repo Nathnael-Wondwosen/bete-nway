@@ -29,7 +29,7 @@ interface Category {
 
 // Fallback sample data when API is unavailable
 const SAMPLE_ARTWORKS: Artwork[] = [
-  { _id: "1", title: "Virgin Mary & Child", slug: "virgin-mary-child", price: 450, materials: "Acrylic on Canvas", averageRating: 4.8, totalRatings: 32, featuredImage: "https://images.unsplash.com/photo-1577083165299-6f4ea30e4b72?w=600&q=80", images: [], status: "active" },
+  { _id: "1", title: "Virgin Mary & Child", slug: "virgin-mary-child", price: 450, materials: "Acrylic on Canvas", averageRating: 4.8, totalRatings: 32, featuredImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80", images: [], status: "active" },
   { _id: "2", title: "Ethiopian Cross", slug: "ethiopian-cross", price: 320, materials: "Brass", averageRating: 4.6, totalRatings: 18, featuredImage: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=80", images: [], status: "active" },
   { _id: "3", title: "St. George Icon", slug: "st-george-icon", price: 560, materials: "Acrylic on Wood", averageRating: 4.9, totalRatings: 41, featuredImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80", images: [], status: "active" },
   { _id: "4", title: "Ancient Manuscript", slug: "ancient-manuscript", price: 780, materials: "Gouache on Parchment", averageRating: 4.7, totalRatings: 27, featuredImage: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&q=80", images: [], status: "active" },

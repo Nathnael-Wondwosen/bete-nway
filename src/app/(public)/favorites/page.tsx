@@ -18,7 +18,7 @@ interface Artwork {
 }
 
 const SAMPLE_MAP: Record<string, Artwork> = {
-  "virgin-mary-child": { _id: "1", title: "Virgin Mary & Child", slug: "virgin-mary-child", price: 450, materials: "Acrylic on Canvas", featuredImage: "https://images.unsplash.com/photo-1577083165299-6f4ea30e4b72?w=600&q=80", averageRating: 4.8, totalRatings: 32 },
+  "virgin-mary-child": { _id: "1", title: "Virgin Mary & Child", slug: "virgin-mary-child", price: 450, materials: "Acrylic on Canvas", featuredImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80", averageRating: 4.8, totalRatings: 32 },
   "ethiopian-cross": { _id: "2", title: "Ethiopian Cross", slug: "ethiopian-cross", price: 320, materials: "Brass", featuredImage: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=80", averageRating: 4.6, totalRatings: 18 },
 };
 

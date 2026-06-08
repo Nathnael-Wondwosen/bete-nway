@@ -36,9 +36,9 @@ const FALLBACK: ArtworkDetail = {
   story: "This icon was painted during the celebration of Timkat (Epiphany) and was inspired by traditional Ethiopian Orthodox iconography from the Gondar period. The artist spent three months in meditation and prayer before beginning this sacred work, following the ancient tradition of Ethiopian iconographers who believe their hands are guided by the Holy Spirit.",
   price: 450, dimensions: "40cm × 60cm", materials: "Acrylic on Canvas",
   averageRating: 4.8, totalRatings: 32,
-  featuredImage: "https://images.unsplash.com/photo-1577083165299-6f4ea30e4b72?w=800&q=80",
+  featuredImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80",
   images: [
-    "https://images.unsplash.com/photo-1577083165299-6f4ea30e4b72?w=800&q=80",
+    "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80",
     "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80",
     "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=800&q=80",
   ],
