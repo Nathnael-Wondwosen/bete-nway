@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { Search, Heart, User, Menu, X, ArrowRight } from "lucide-react";
+import { Search, Heart, Menu, X, ArrowRight } from "lucide-react";
 import CrossOrnament from "./CrossOrnament";
 
 export default function Navbar() {
@@ -71,7 +71,7 @@ export default function Navbar() {
     { name: "Artists", href: "/artists" },
     { name: "Favorites", href: "/favorites" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+
   ];
 
   return (
@@ -89,7 +89,7 @@ export default function Navbar() {
             <CrossOrnament size={32} className="transition-transform duration-500 group-hover:rotate-45" />
             <div className="flex flex-col">
               <span className="font-serif text-lg md:text-xl font-bold tracking-widest text-orthodox-gold group-hover:text-white transition-colors duration-300">
-                ORTHODOX ART
+                FINOT ART
               </span>
               <span className="text-[9px] tracking-[0.25em] text-white/60 font-sans uppercase -mt-1">
                 Expo Platform
@@ -173,13 +173,12 @@ export default function Navbar() {
               )}
             </Link>
 
-            {/* Admin Dashboard / Login Link */}
+            {/* Contact Us Link */}
             <Link
-              href="/admin/login"
+              href="/contact"
               className="flex items-center gap-1.5 text-xs text-orthodox-gold border border-orthodox-gold/30 hover:border-orthodox-gold bg-orthodox-gold/5 hover:bg-orthodox-gold/10 px-3.5 py-1.5 rounded transition-all duration-300 font-sans tracking-wider uppercase"
             >
-              <User size={14} />
-              Dashboard
+              Contact Us
             </Link>
           </div>
 
@@ -251,12 +250,11 @@ export default function Navbar() {
 
           <div className="flex flex-col gap-4 mt-12 pb-16">
             <Link
-              href="/admin/login"
+              href="/contact"
               onClick={() => setIsOpen(false)}
               className="w-full flex items-center justify-center gap-2 text-center text-orthodox-gold border border-orthodox-gold/40 hover:border-orthodox-gold bg-orthodox-gold/5 py-3 rounded-md font-sans tracking-widest uppercase text-sm"
             >
-              <User size={16} />
-              Admin Portal
+              Contact Us
             </Link>
             <p className="text-center text-xs text-white/40 font-sans font-light">
               Preserving Sacred Art &middot; Bete Nway
